@@ -12,8 +12,16 @@
         <servlet-name>HttpServletDemo1</servlet-name>
         <servlet-class>com.yuan.httpservlet.HttpServletDemo1</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InputCodeCheck</servlet-name>
+        <servlet-class>com.yuan.httpservlet.InputCodeCheck</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HttpServletDemo1</servlet-name>
         <url-pattern>/HttpServletDemo1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InputCodeCheck</servlet-name>
+        <url-pattern>/InputCodeCheck</url-pattern>
     </servlet-mapping>
 </web-app>

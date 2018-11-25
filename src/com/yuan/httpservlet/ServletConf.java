@@ -13,14 +13,12 @@ import javax.servlet.http.HttpServlet;
 */
 @WebServlet(name = "ServletConf")
 public class ServletConf extends HttpServlet {
+    public ThreadDemo1 thread1 = new ThreadDemo1();
     public void init(ServletConfig conf)
             throws ServletException {
 
-        System.out.println("ServletConf");
-        ThreadDemo1 thread1 = new ThreadDemo1();
         thread1.start();
     }
     public void destroy(){
-
     }
 }
