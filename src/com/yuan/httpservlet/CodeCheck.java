@@ -6,6 +6,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /*
    @author  yuan
@@ -14,6 +17,7 @@ import java.io.IOException;
 @WebServlet(name = "CodeCheck")
 public class CodeCheck extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         String clientCode = request.getParameter("validateCode");
         String serverCode = (String)request.getSession().getAttribute("CheckCode");
 
@@ -23,6 +27,14 @@ public class CodeCheck extends HttpServlet {
         }else{
             response.getWriter().println("<h1>验证失败</h1>");
         }
+
+//        try {
+//                Thread.sleep(3000);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        response.setHeader("refresh","3;"+request.getContextPath());
+        //response.sendRedirect(request.getContextPath());
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
