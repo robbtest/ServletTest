@@ -16,6 +16,10 @@
         <servlet-name>InputCodeCheck</servlet-name>
         <servlet-class>com.yuan.httpservlet.InputCodeCheck</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CodeCheck</servlet-name>
+        <servlet-class>com.yuan.httpservlet.CodeCheck</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HttpServletDemo1</servlet-name>
         <url-pattern>/HttpServletDemo1</url-pattern>
@@ -23,5 +27,9 @@
     <servlet-mapping>
         <servlet-name>InputCodeCheck</servlet-name>
         <url-pattern>/InputCodeCheck</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CodeCheck</servlet-name>
+        <url-pattern>/CodeCheck</url-pattern>
     </servlet-mapping>
 </web-app>

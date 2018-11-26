@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="aliyun_tomcat8.5.33">
+    <serverData>
+      <paths name="aliyun_tomcat8.5.33">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mediaMgr" local="$PROJECT_DIR$/out/artifacts/ServletTest_war_exploded" web="/mediaMgr" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
