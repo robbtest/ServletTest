@@ -20,6 +20,10 @@
         <servlet-name>CodeCheck</servlet-name>
         <servlet-class>com.yuan.httpservlet.CodeCheck</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SqlServlet</servlet-name>
+        <servlet-class>com.yuan.httpservlet.SqlServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HttpServletDemo1</servlet-name>
         <url-pattern>/HttpServletDemo1</url-pattern>
@@ -31,5 +35,9 @@
     <servlet-mapping>
         <servlet-name>CodeCheck</servlet-name>
         <url-pattern>/CodeCheck</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SqlServlet</servlet-name>
+        <url-pattern>/SqlServlet</url-pattern>
     </servlet-mapping>
 </web-app>

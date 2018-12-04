@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="aliyun_tomcat8.5.33">
+  <component name="PublishConfigData" serverName="robb.store">
     <serverData>
       <paths name="aliyun_tomcat8.5.33">
         <serverdata>
           <mappings>
             <mapping deploy="/mediaMgr" local="$PROJECT_DIR$/out/artifacts/ServletTest_war_exploded" web="/mediaMgr" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="robb.store">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/TestMgr" local="$PROJECT_DIR$/out/artifacts/ServletTest_war_exploded" web="/TestMgr" />
           </mappings>
         </serverdata>
       </paths>

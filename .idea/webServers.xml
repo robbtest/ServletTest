@@ -10,6 +10,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="ddedec2a-4dac-4bfc-aae3-b05c4786286b" name="robb.store" url="http://www.robb.store:8080">
+        <fileTransfer host="www.robb.store" port="22" rootFolder="/robb/webapp/tomcat_webapps" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

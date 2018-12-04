@@ -9,7 +9,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>在Form表单中使用验证码</title>
+  <title>验证码</title>
   <script type="text/javascript">
       //刷新验证码
       function changeImg(){
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<form action="${pageContext.request.contextPath}/CodeCheck" method="post">
+<form action="${pageContext.request.contextPath}/CodeCheck" method="get">
   验证码：<input type="text" name="validateCode"/>
   <a href="javascript:void(0)" onclick="changeImg()">看不清，换一张</a>
   <br/>
