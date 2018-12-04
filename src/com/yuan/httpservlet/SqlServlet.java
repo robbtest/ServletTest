@@ -28,6 +28,7 @@ public class SqlServlet extends HttpServlet {
             ResultSet re = preStm.executeQuery();
             while (re.next()){
                 response.getWriter().println(re.getString(1)+"="+re.getString(2));
+                response.getWriter().println("<br/>");
             }
 
         } catch (ClassNotFoundException | SQLException e) {
